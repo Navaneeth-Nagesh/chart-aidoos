@@ -1,0 +1,53 @@
+.node rect {
+    cursor: move;
+    fill-opacity: .9;
+    shape-rendering: crispEdges;
+}
+  
+.node text {
+    pointer-events: none;
+    text-shadow: 0 1px 0 #fff;
+}
+  
+.link {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .2;
+}
+  
+.link:hover {
+    stroke-opacity: .5;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    &.show {
+        display: flex;
+    }
+}
+
+.content {
+    background-color: white;
+    padding: 30px 50px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+    cursor: pointer;
+}
+
